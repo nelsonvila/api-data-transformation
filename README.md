@@ -29,7 +29,7 @@ This project allows to transform in the most described way the Data Transformati
 ## How to start
 
 1. Clone or download this repository to your computer.
-1.  Copy the .env file with the command  `` cp .env.sample .env `` and set the parameter **HEADER_API_KEY** cib the corresponding **api-key**. 
+1.  Copy the `.env` file with the command  `` cp .env.sample .env `` and set the **HEADER_API_KEY** parameter with the corresponding **api-key**. 
 
 ## Installation
 
@@ -71,7 +71,7 @@ Once the `.env` file is configured and the application is **running**, we can pr
     |-----|---------------|
     | site   | The site that can be `ar` or `br` |
 
-> **NOTE:** You can also test the deployed endpoint: `http://3.133.111.41:3000/cars?site={{site}}`.
+    > **NOTE:** You can also test the deployed endpoint: `http://3.133.111.41:3000/cars?site={{site}}`.
 
 
 1. Click on the `Send` button and the request will be sent to the endpoint, you should receive a response with the status `200 Ok` and a JSON with the filtered cars.
@@ -85,6 +85,7 @@ Once the `.env` file is configured and the application is **running**, we can pr
     | site   | The `site` that can be `ar` or `br` |
     | ids   | The query `ids` will receive ids separated by commas. E.g. `ids=349851,349970` |
 
+    > **NOTE:** You can also test the deployed endpoint: `http://3.133.111.41:3000/cars-ids?site=br&ids={{ids}}`.
+
 1. Click on the `Send` button and the request will be sent to the endpoint, you should receive a response with the status `200 Ok` and a JSON with the filtered cars by ids.
 
-> **NOTE:** You can also test the deployed endpoint: `http://3.133.111.41:3000/cars-ids?site=br&ids={{ids}}`.
