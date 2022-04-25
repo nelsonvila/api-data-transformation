@@ -71,6 +71,8 @@ Once the `.env` file is configured and the application is **running**, we can pr
     |-----|---------------|
     | site   | The site that can be `ar` or `br` |
 
+> **NOTE:** You can also test the deployed endpoint: `http://3.133.111.41:3000/cars?site={{site}}`.
+
 
 1. Click on the `Send` button and the request will be sent to the endpoint, you should receive a response with the status `200 Ok` and a JSON with the filtered cars.
 
@@ -85,3 +87,4 @@ Once the `.env` file is configured and the application is **running**, we can pr
 
 1. Click on the `Send` button and the request will be sent to the endpoint, you should receive a response with the status `200 Ok` and a JSON with the filtered cars by ids.
 
+> **NOTE:** You can also test the deployed endpoint: `http://3.133.111.41:3000/cars-ids?site=br&ids={{ids}}`.
