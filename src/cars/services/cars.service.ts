@@ -9,7 +9,9 @@ export class CarsService implements ICarsService {
   constructor(private readonly karvisService: KarvisService) {}
 
   async findAll(site: FilterQueryDto['site']): Promise<OutputCarDto> {
-    const responseKarvisCars = await this.karvisService.getSiteCars(site);
+    const responseKarvisCars: CarDto[] = await this.karvisService.getSiteCars(
+      site,
+    );
     if (responseKarvisCars !== undefined) {
       const carsOrdered = this.orderCarsByYearAndPrice(responseKarvisCars);
 

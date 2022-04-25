@@ -30,8 +30,11 @@ export class KarvisService {
         cars = res.data;
         return cars;
       })
-      .catch((err) => console.log(`Request failed with error: ${err}`));
+      .catch((err) => {
+        console.log(`Request failed with error: ${err}`);
+        cars = undefined;
+      });
 
-    return undefined;
+    return cars;
   }
 }
